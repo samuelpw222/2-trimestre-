@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                font-size: 18px;
+            }
+            .card {
+                margin: 5px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                font-size: 16px;
+            }
+            .card {
+                padding: 10px;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Página Responsiva</h1>
+    </header>
+    <div class="container">              
+        <div class="content">
+            <div class="card">
+                <h2>Card 1</h2>
+                <p>Este é um exemplo de card. A página se ajusta a diferentes tamanhos de tela.</p>
+            </div>
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>O layout é adaptável para tablets e dispositivos móveis.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
